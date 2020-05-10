@@ -42,6 +42,7 @@ public class MiaoshaUserService {
 		}
 		return user;
 	}
+	// 注意缓存更新操作的原子行 事务
 	// http://blog.csdn.net/tTU1EvLDeLFq5btqiK/article/details/78693323
 	public boolean updatePassword(String token, long id, String formPass) {
 		//取user
